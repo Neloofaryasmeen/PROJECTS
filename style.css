@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100%;
+}
+
+/* header */
+.menu-btn{
+    color:#424144;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    padding: 30px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color: #f3f4f6;
+    box-shadow: 0 0 14px rgba(0,0,0,0.3);
+}
+
+.navbar .logo h1{
+    color: #424144;
+    border-bottom: 4px solid #fd6561;
+
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left: 20px; 
+    color: #424144;
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .menu li a i{
+    color: #fd6561;
+}
+.navbar .menu li a:hover {
+    border-bottom: 4px solid #fd6561;
+}
+
+/*  content */
+
+.content{
+   background-image: url(https://media.istockphoto.com/id/1193750118/photo/beautiful-asian-woman-carrying-colorful-bags-shopping-online-with-mobile-phone.jpg?s=612x612&w=0&k=20&c=j1SpSX7c3qzBrUT5f7HRoOfxQnPxZY_c6yb3AvXA5f8=);
+  background-size: cover;
+   background-repeat: no-repeat;
+   padding: 10 5%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   color: #424144;
+   height: 100vh;
+}
+
+.content h1{
+    font-size: 30px;
+    align-items: center;
+   color: #280b6a;
+   margin: 20px;
+  
+   
+}
+
+.content p1{
+    font-size: 30px ;
+    align-items: center;
+  color:#330305;
+    margin: 20px;
+}
+
+.content p2{
+   font-size: 30px; 
+   margin: 20px;
+   color: #330305;
+}
+
+.content p3{
+    font-size: 30px;
+    margin: 20px;
+    color: #280b6a;
+}
+.content p4{
+    font-size: 30px; 
+    margin: 20px;
+    color: #280b6a;
+ }
+
+.content button{
+    margin-top: 30px;
+    margin: 20px;
+    padding: 20px 30px;
+    border: none;
+    background: #ec1f29;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.content  btn:hover{
+     box-shadow: #424144;
+     cursor: pointer;
+     border-color: #e72630;
+
+}
+.pheading{
+    text-align: center;
+    
+    color: #e72630;
+   opacity: 0.8;
+   margin-top: 50px;
+   margin-bottom: 20px;
+
+
+}
+.sec1{
+padding: 10px 5%;
+margin-top: 50px;
+column-gap: 30px;
+display: flex;
+row-gap: 40px;
+
+}
+
+.sec2{
+    padding: 10px 5%;
+    margin-top: 50px;
+    column-gap: 30px;
+    display: flex;
+    row-gap: 40px;
+    }
+
+    .sec3{
+        padding: 10px 5%;
+        margin-top: 50px;
+        column-gap: 30px;
+        display: flex;
+        row-gap: 40px;
+        }
+.products {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    display: flex;
+
+}
+
+
+.products .card{
+    width: 310px;
+    background: 20px;
+    
+   box-shadow:0 10px 20px rgba(0,0,0,0.3);
+   border-radius: 5px;
+   padding: 5px;
+   margin-bottom: 30px;
+   overflow: hidden;
+
+   
+
+}
+
+
+.products .card img {
+     height: 250px; 
+     width: 100%;
+   touch-action: double-tap-zoom;
+}
+
+.products .card img :hover{
+    border: none;
+    box-shadow: 0px,3px,20px color  #424144;
+    transform: scaleX(1.05);
+    cursor: pointer;
+}
+
+.products .card .desc{
+    padding: 5px 20px;
+    opacity: 0.8;
+}
+
+.products .card .title{
+  font-weight: 900;
+  font-size: 20px;
+  color: #424144;
+  padding:0 20px ;
+}
+
+.products .card .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+   
+    
+}
+
+
+.products .card  .price{
+    color: #f63e46;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.products .card  .btn{
+    font-size: 20px ;
+    color: #f63e46;
+    padding: 10px 18px;
+    font-weight: 900;
+    border: 1px solid #f63e46;
+    border-radius: 20px;
+    
+}
+
+.products .card  .btn:hover{
+  background-color: #e72630;
+    color: #f3f4f6;
+    transform: scaleX(1.05);
+    
+    cursor: pointer;
+}
+
+
+    
+
+/* footer */
+
+footer{
+background-color: #f3f4f6;
+height: 10vh;
+}
+
+footer p{
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #fd6561;
+    font-weight: bold;
+}
+
+/* Resonsive */
+
+@media(max-width: 820px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        height: 100vh;
+        width: 100%;
+        left: 100%;
+        top: 0;
+        background-color: #424144;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0%;
+    }
+
+   
+
+
+}
+
+
+    
